@@ -5,5 +5,7 @@ pymysql
 python-dotenv
 scikit-learn
 cryptography
-
+seaborn
+catboost
+xgboost
 # -e .
