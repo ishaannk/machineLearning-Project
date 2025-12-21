@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Performance Predictor</h1>
+    <p class="subtitle">Predict academic score & risk level</p>
+
+    <form method="POST" class="card">
+
+        <div class="grid">
+            <select name="gender" required>
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <select name="race_ethnicity" required>
+                <option value="">Race / Ethnicity</option>
+                <option value="group A">Group A</option>
+                <option value="group B">Group B</option>
+                <option value="group C">Group C</option>
+                <option value="group D">Group D</option>
+                <option value="group E">Group E</option>
+            </select>
+
+            <select name="parent_education" required>
+                <option value="">Parental Education</option>
+                <option value="bachelor's degree">Bachelor's Degree</option>
+                <option value="some college">Some College</option>
+                <option value="master's degree">Master's Degree</option>
+                <option value="associate's degree">Associate's Degree</option>
+                <option value="high school">High School</option>
+            </select>
+
+            <select name="lunch" required>
+                <option value="">Lunch Type</option>
+                <option value="standard">Standard</option>
+                <option value="free/reduced">Free / Reduced</option>
+            </select>
+
+            <select name="test_prep" required>
+                <option value="">Test Preparation</option>
+                <option value="none">None</option>
+                <option value="completed">Completed</option>
+            </select>
+
+            <input type="number" name="reading_score" placeholder="Reading Score" min="0" max="100" required>
+            <input type="number" name="writing_score" placeholder="Writing Score" min="0" max="100" required>
+        </div>
+
+        <button type="submit">Predict Performance</button>
+    </form>
+</div>
+
+</body>
+</html>

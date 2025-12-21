@@ -8,6 +8,15 @@ from dataclasses import dataclass
 
 from sklearn.model_selection import train_test_split
 # Data Class
+import dagshub
+import mlflow
+
+dagshub.init(
+    repo_owner='iamishank97',
+    repo_name='machineLearning-Project',
+    mlflow=True
+)
+
 @dataclass
 class DataIngestionConfig:
     train_data_path:str = os.path.join('artifacts','train.csv')

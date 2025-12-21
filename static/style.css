@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+.result .score {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 15px 0;
+}
+
+.risk {
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+.low {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.high {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.back {
+    text-decoration: none;
+    color: #4f46e5;
+    font-weight: bold;
+}
